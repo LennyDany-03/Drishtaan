@@ -7,6 +7,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, 
 import { LayoutDashboard, Settings, BarChart3, Calendar, TrendingUp, Target, Award, PieChartIcon } from "lucide-react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const getDashboardData = () => {
   return {
@@ -104,7 +105,7 @@ const DashboardPage = () => {
                 label: "Student Profile",
                 href: "#",
                 icon: (
-                  <img
+                  <Image
                     src="/pie-chart-example.svg"
                     className="h-7 w-7 shrink-0 rounded-full"
                     width={28}

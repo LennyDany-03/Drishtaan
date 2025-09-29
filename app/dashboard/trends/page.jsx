@@ -16,6 +16,7 @@ import {
   Clock,
   BookOpen,
 } from "lucide-react"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 
@@ -136,7 +137,7 @@ const TrendsPage = () => {
                 label: "Student Profile",
                 href: "#",
                 icon: (
-                  <img
+                  <Image
                     src="/student-avatar.png"
                     className="h-7 w-7 shrink-0 rounded-full"
                     width={28}

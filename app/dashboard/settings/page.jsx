@@ -7,6 +7,7 @@ import { Switch } from "@/components/ui/switch"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import Image from "next/image"
 import {
   LayoutDashboard,
   Settings,
@@ -122,7 +123,7 @@ const SettingsPage = () => {
                 label: "Student Profile",
                 href: "#",
                 icon: (
-                  <img
+                  <Image
                     src="/student-avatar.png"
                     className="h-7 w-7 shrink-0 rounded-full"
                     width={28}
@@ -159,7 +160,7 @@ const SettingsPage = () => {
               <CardContent className="space-y-4">
                 {/* Profile Photo */}
                 <div className="flex items-center gap-4">
-                  <img
+                  <Image
                     src="/student-avatar.png"
                     alt="Profile"
                     className="w-16 h-16 rounded-full border-2 border-blue-400"

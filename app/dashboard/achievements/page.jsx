@@ -3,6 +3,7 @@ import { useState } from "react"
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import {
   LayoutDashboard,
   Settings,
@@ -236,7 +237,7 @@ const AchievementsPage = () => {
                 label: "Student Profile",
                 href: "#",
                 icon: (
-                  <img
+                  <Image
                     src="/student-avatar.png"
                     className="h-7 w-7 shrink-0 rounded-full"
                     width={28}
